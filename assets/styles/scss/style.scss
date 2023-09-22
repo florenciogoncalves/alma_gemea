@@ -10,7 +10,64 @@ body {
   background: url(../../images/bg.png) center no-repeat;
   background-size: cover;
 }
-.title {
-    font-weight: 400;
-    color: $cream;
+.btn-primary {
+  border: none;
+  color: $black-2;
+  background-color: $cream;
+  &:hover {
+    background: $cream;
+  }
+}
+
+.select-born-container {
+  position: relative;
+  .select-born {
+    appearance: none;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.63);
+    color: rgba(255, 255, 255, 0.63);
+    font-weight: 500;
+    font-size: 0.95rem;
+    background-color: $accent-violet;
+
+    option {
+      color: $black-2;
+    }
+  }
+  &.month {
+    .select-born {
+      padding-left: 2.45rem;
+    }
+    &::before {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0.75rem;
+      display: block;
+      content: "";
+      width: 1.2rem;
+      height: 1.2rem;
+      background: url(../../images/calendary.svg) center no-repeat;
+      background-size: contain;
+    }
+  }
+  &::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0.75rem;
+    display: block;
+    content: "";
+    width: 0.65rem;
+    height: 0.65rem;
+    background: url(../../images/arrow-down-list.svg) center no-repeat;
+    background-size: contain;
+  }
+}
+
+.line-with-star {
+    .__line {
+        height: 1px;
+        background: $cream;
+    }
 }

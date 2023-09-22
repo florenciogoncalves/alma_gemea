@@ -3,11 +3,37 @@
   font-family: "Strickland Keafney";
   src: url(../../fonts/Strickland\ Keafney.otf); }
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300; }
 
 .title {
+  font-weight: 400;
+  color: #D8BFA0; }
+
+.title,
+.btn-primary {
   font-family: "Strickland Keafney"; }
+
+.btn-primary {
+  text-transform: uppercase; }
+
+.color--white {
+  color: #fff; }
+
+.color--cream {
+  color: #D8BFA0; }
+
+.color--black {
+  color: #000; }
+
+.h-full {
+  height: 100%; }
+
+.h-half {
+  height: 50%; }
+
+.rounded-md {
+  border-radius: .75rem; }
 
 html,
 body {
@@ -17,8 +43,52 @@ body {
   background: url(../../images/bg.png) center no-repeat;
   background-size: cover; }
 
-.title {
-  font-weight: 400;
-  color: #D8BFA0; }
+.btn-primary {
+  border: none;
+  color: #2C2C2C;
+  background-color: #D8BFA0; }
+  .btn-primary:hover {
+    background: #D8BFA0; }
+
+.select-born-container {
+  position: relative; }
+  .select-born-container .select-born {
+    appearance: none;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.63);
+    color: rgba(255, 255, 255, 0.63);
+    font-weight: 500;
+    font-size: 0.95rem;
+    background-color: rgba(255, 255, 255, 0.34); }
+    .select-born-container .select-born option {
+      color: #2C2C2C; }
+  .select-born-container.month .select-born {
+    padding-left: 2.45rem; }
+  .select-born-container.month::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.75rem;
+    display: block;
+    content: "";
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url(../../images/calendary.svg) center no-repeat;
+    background-size: contain; }
+  .select-born-container::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0.75rem;
+    display: block;
+    content: "";
+    width: 0.65rem;
+    height: 0.65rem;
+    background: url(../../images/arrow-down-list.svg) center no-repeat;
+    background-size: contain; }
+
+.line-with-star .__line {
+  height: 1px;
+  background: #D8BFA0; }
 
 /*# sourceMappingURL=style.css.map */

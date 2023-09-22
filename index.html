@@ -7,17 +7,92 @@
     <link rel="stylesheet" href="./assets/styles/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/styles/css/style.css" />
   </head>
-  <body class="d-flex flex-column justify-content-center align-items-center">
-    <h1 class="title">Informe sua data de nascimento</h1>
-    <div class="text">Isso nos ajudará a saber seu signo solar</div>
-    <div class="bar"></div>
-    <form action="" class="born-form">
-      <div class="">
-        <div class=""></div>
-        <div class=""></div>
-        <div class=""></div>
+  <body
+    class="color--white d-flex flex-column justify-content-center align-items-center"
+  >
+    <div
+      class="d-flex flex-column justify-content-center align-items-center h-full col-md-6"
+    >
+      <h1 class="title text-center">Informe sua data de nascimento</h1>
+      <p class="text text-center">Isso nos ajudará a saber seu signo solar</p>
+      <!-- Middle line -->
+      <div class="line-with-star d-flex flex-row align-items-center col-10 col-md-12 my-3">
+        <div class="__line col"></div>
+        <img src="./assets/images/three-stars.svg" class="col-1 mx-3 p-1"/>
+        <div class="__line col"></div>
       </div>
-      <button type="submit">Prosseguir</button>
-    </form>
+      <!-- Middle line -->
+      <form action="" class="born-form d-flex flex-column col-12">
+        <section
+          class="d-flex justify-content-center col-10 mx-auto my-4 gap-2"
+        >
+          <div class="select-born-container month col">
+            <select
+              class="select-born d-flex rounded-md py-3 pe-md-3 align-items-center gap-2 col-12"
+            >
+              <label class="born-date-label" for="born-date"></label>
+              <option value="1">Janeiro</option>
+              <option value="2">Fevereiro</option>
+              <option value="3">Março</option>
+              <option value="4">Abril</option>
+              <option value="5">Maio</option>
+              <option value="6">Junho</option>
+              <option value="7">Julho</option>
+              <option value="8">Agosto</option>
+              <option value="9">Setembro</option>
+              <option value="10">Outubro</option>
+              <option value="11">Novembro</option>
+              <option value="12">Dezembro</option>
+            </select>
+          </div>
+          <div class="select-born-container col-3">
+            <select class="select-born rounded-md py-3 px-2 px-md-3 col-12">
+              <option value="1">01</option>
+              <option value="2">02</option>
+              <option value="3">03</option>
+              <option value="4">04</option>
+              <option value="5">05</option>
+              <option value="6">06</option>
+              <option value="7">07</option>
+              <option value="8">08</option>
+              <option value="9">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+          </div>
+          <div class="select-born-container col-3">
+            <select class="select-born rounded-md py-3 px-2 px-md-3 col-12">
+              <option value="">2004</option>
+            </select>
+          </div>
+        </section>
+        <button
+          class="btn btn-primary py-3 col-9 rounded-md mx-auto mt-5"
+          type="submit"
+        >
+          Prosseguir
+        </button>
+      </form>
+    </div>
   </body>
 </html>
