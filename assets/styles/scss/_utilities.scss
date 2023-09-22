@@ -1,21 +1,24 @@
-.color--white {
+._color--white {
   color: $white;
 }
-.color--cream {
+._color--cream {
   color: $cream;
 }
-.color--black {
+._color--black {
   color: $black;
 }
 
-
 .h-full {
-    height: 100%;
+  height: 100%;
 }
 .h-half {
-    height: 50%;
+  height: 50%;
 }
 
 .rounded-md {
-    border-radius: .75rem;
+  border-radius: 0.75rem;
+}
+
+._bg--blur {
+  backdrop-filter: blur(6.5px);
 }

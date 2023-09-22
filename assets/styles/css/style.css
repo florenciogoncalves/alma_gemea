@@ -17,13 +17,13 @@
 .btn-primary {
   text-transform: uppercase; }
 
-.color--white {
+._color--white {
   color: #fff; }
 
-.color--cream {
+._color--cream {
   color: #D8BFA0; }
 
-.color--black {
+._color--black {
   color: #000; }
 
 .h-full {
@@ -33,7 +33,10 @@
   height: 50%; }
 
 .rounded-md {
-  border-radius: .75rem; }
+  border-radius: 0.75rem; }
+
+._bg--blur {
+  backdrop-filter: blur(6.5px); }
 
 html,
 body {
@@ -90,5 +93,31 @@ body {
 .line-with-star .__line {
   height: 1px;
   background: #D8BFA0; }
+
+.roulette-wrapper {
+  position: relative;
+  background: #ccc;
+  height: 720px;
+  width: 720px; }
+
+#spin-button {
+  position: absolute; }
+
+.roulette-wrapper .top-image {
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  transform: translateX(-50%);
+  z-index: 777; }
+
+.roulette-wrapper .center-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+.roulette-wrapper canvas {
+  position: absolute;
+  border-radius: 50%; }
 
 /*# sourceMappingURL=style.css.map */

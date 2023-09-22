@@ -71,3 +71,35 @@ body {
         background: $cream;
     }
 }
+
+// Roulete
+.roulette-wrapper {
+  position: relative;
+  background: #ccc;
+  height: 720px;
+  width: 720px;
+}
+
+#spin-button {
+  position: absolute;
+}
+
+.roulette-wrapper .top-image {
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  transform: translateX(-50%);
+  z-index: 777;
+}
+
+.roulette-wrapper .center-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.roulette-wrapper canvas {
+  position: absolute;
+  border-radius: 50%;
+}
