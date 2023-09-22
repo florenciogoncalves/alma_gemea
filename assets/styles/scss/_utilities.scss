@@ -1,3 +1,4 @@
+// Text
 ._color--white {
   color: $white;
 }
@@ -7,7 +8,17 @@
 ._color--black {
   color: $black;
 }
+._color--white-63 {
+  color: $accent-white-63;
+}
+._text--upper {
+  text-transform: uppercase;
+}
+._text-justify {
+  text-align: justify;
+}
 
+// Element sizes
 .h-full {
   height: 100%;
 }

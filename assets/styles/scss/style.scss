@@ -7,13 +7,36 @@ body {
   height: 100%;
 }
 body {
-  background: url(../../images/bg.png) center no-repeat;
+  background: url(../../images/bg.png) center right no-repeat, $sky-night-blue;
+  &._bg--2 {
+    background-image: url(../../images/);
+  }
   background-size: cover;
+}
+* {
+  &::-webkit-scrollbar {
+    appearance: none;
+    width: 8px;
+  }
+  &:not(._scrollbar--hidden) {
+    &::-webkit-scrollbar {
+      border-radius: 0.5rem;
+      background: $gray;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #000;
+      width: 1px;
+      border-radius: 0.5rem;
+    }
+  }
 }
 .btn-primary {
   border: none;
   color: $black-2;
-  background-color: $cream;
+  &,
+  &:active {
+    background-color: $cream;
+  }
   &:hover {
     background: $cream;
   }
@@ -28,7 +51,7 @@ body {
     color: rgba(255, 255, 255, 0.63);
     font-weight: 500;
     font-size: 0.95rem;
-    background-color: $accent-violet;
+    background-color: $accent-white-34;
 
     option {
       color: $black-2;
@@ -66,10 +89,10 @@ body {
 }
 
 .line-with-star {
-    .__line {
-        height: 1px;
-        background: $cream;
-    }
+  .__line {
+    height: 1px;
+    background: $cream;
+  }
 }
 
 // Roulete
