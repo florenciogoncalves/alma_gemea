@@ -14,11 +14,23 @@
 .btn-primary {
   font-family: "Strickland Keafney"; }
 
-.btn-primary {
-  text-transform: uppercase; }
+.h-full {
+  height: 100%; }
+
+.h-half {
+  height: 50%; }
+
+.rounded-md {
+  border-radius: 0.75rem; }
+
+._bg--blur {
+  backdrop-filter: blur(6.5px); }
+
+._bg-blur-md {
+  backdrop-filter: blur(11px); }
 
 ._color--white {
-  color: #fff; }
+  color: #fff !important; }
 
 ._color--cream {
   color: #d8bfa0; }
@@ -35,17 +47,8 @@
 ._text-justify {
   text-align: justify; }
 
-.h-full {
-  height: 100%; }
-
-.h-half {
-  height: 50%; }
-
-.rounded-md {
-  border-radius: 0.75rem; }
-
-._bg--blur {
-  backdrop-filter: blur(6.5px); }
+._bg--white-34 {
+  background-color: rgba(255, 255, 255, 0.34) !important; }
 
 html,
 body {
@@ -55,7 +58,10 @@ body {
   background: url(../../images/bg.png) center right no-repeat, #0E062B;
   background-size: cover; }
   body._bg--2 {
-    background-image: url(../../images/); }
+    background: url(../../images/bg-2.png) top center; }
+  body._bg--city {
+    background: url(../../images/bg-cadastro-cidade.png) left center no-repeat, url(../../images/bg-2.png) top center no-repeat;
+    background-size: contain, cover; }
 
 *::-webkit-scrollbar {
   appearance: none;

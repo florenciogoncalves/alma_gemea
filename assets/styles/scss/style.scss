@@ -9,7 +9,11 @@ body {
 body {
   background: url(../../images/bg.png) center right no-repeat, $sky-night-blue;
   &._bg--2 {
-    background-image: url(../../images/);
+    background: url(../../images/bg-2.png) top center;
+  }
+  &._bg--city {
+    background: url(../../images/bg-cadastro-cidade.png) left center no-repeat, url(../../images/bg-2.png) top center no-repeat;
+    background-size: contain, cover;
   }
   background-size: cover;
 }

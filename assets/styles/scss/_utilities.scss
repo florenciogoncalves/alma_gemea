@@ -1,6 +1,25 @@
+// Element sizes
+.h-full {
+  height: 100%;
+}
+.h-half {
+  height: 50%;
+}
+
+.rounded-md {
+  border-radius: 0.75rem;
+}
+
+._bg--blur {
+  backdrop-filter: blur(6.5px);
+}
+._bg-blur-md {
+  backdrop-filter: blur(11px);
+}
+
 // Text
 ._color--white {
-  color: $white;
+  color: $white !important;
 }
 ._color--cream {
   color: $cream;
@@ -18,18 +37,7 @@
   text-align: justify;
 }
 
-// Element sizes
-.h-full {
-  height: 100%;
-}
-.h-half {
-  height: 50%;
-}
-
-.rounded-md {
-  border-radius: 0.75rem;
-}
-
-._bg--blur {
-  backdrop-filter: blur(6.5px);
+// Background
+._bg--white-34 {
+  background-color: $accent-white-34 !important;
 }
