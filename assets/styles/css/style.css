@@ -56,6 +56,9 @@
 ._bg--white-34 {
   background-color: rgba(255, 255, 255, 0.34) !important; }
 
+._bg-cream {
+  background-color: #d8bfa0; }
+
 html,
 body {
   height: 100%; }
@@ -169,5 +172,12 @@ input::placeholder {
   box-shadow: none; }
   .form-check .form-check-input:checked {
     background: #d8bfa0; }
+
+.loading-bar {
+  height: .95rem;
+  background: #D9D9D9; }
+  @media only screen and (min-width: 768px) {
+    .loading-bar {
+      height: 1.25rem; } }
 
 /*# sourceMappingURL=style.css.map */
