@@ -17,6 +17,10 @@
   backdrop-filter: blur(11px);
 }
 
+._border--white {
+  border: 1px solid $accent-white-34 !important;
+}
+
 // Text
 ._color--white {
   color: $white !important;
@@ -35,6 +39,9 @@
 }
 ._text-justify {
   text-align: justify;
+}
+._text--14 {
+  font-size: 14px;
 }
 
 // Background

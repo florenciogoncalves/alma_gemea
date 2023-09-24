@@ -11,11 +11,23 @@ body {
   &._bg--2 {
     background: url(../../images/bg-2.png) top center;
   }
-  &._bg--city {
-    background: url(../../images/bg-cadastro-cidade.png) left center no-repeat, url(../../images/bg-2.png) top center no-repeat;
+  background-size: cover;
+  &._bg--city,
+  &._bg--nickname {
+    background: url(../../images/bg-cadastro-cidade.png) left bottom no-repeat,
+      url(../../images/bg-2.png) top center no-repeat;
+    background-size: contain, cover;
+    &._bg--nickname {
+      background-image: url(../../images/bg-cadastro-cidade.png),
+        url(../../images/bg-2.png);
+    }
+  }
+  &._bg--time {
+    background: url(../../images/bg-horario-nascimento.png) center bottom
+        no-repeat,
+      url(../../images/bg-2.png) top center no-repeat;
     background-size: contain, cover;
   }
-  background-size: cover;
 }
 * {
   &::-webkit-scrollbar {
@@ -33,6 +45,9 @@ body {
       border-radius: 0.5rem;
     }
   }
+}
+input::placeholder {
+  color: $accent-white-63;
 }
 .btn-primary {
   border: none;
@@ -129,4 +144,15 @@ body {
 .roulette-wrapper canvas {
   position: absolute;
   border-radius: 50%;
+}
+
+.form-check {
+  .form-check-input {
+    border-color: $cream;
+    background: none;
+    box-shadow: none;
+    &:checked {
+      background: $cream;
+    }
+  }
 }

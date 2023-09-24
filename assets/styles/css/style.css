@@ -29,6 +29,9 @@
 ._bg-blur-md {
   backdrop-filter: blur(11px); }
 
+._border--white {
+  border: 1px solid rgba(255, 255, 255, 0.34) !important; }
+
 ._color--white {
   color: #fff !important; }
 
@@ -47,6 +50,9 @@
 ._text-justify {
   text-align: justify; }
 
+._text--14 {
+  font-size: 14px; }
+
 ._bg--white-34 {
   background-color: rgba(255, 255, 255, 0.34) !important; }
 
@@ -59,8 +65,13 @@ body {
   background-size: cover; }
   body._bg--2 {
     background: url(../../images/bg-2.png) top center; }
-  body._bg--city {
-    background: url(../../images/bg-cadastro-cidade.png) left center no-repeat, url(../../images/bg-2.png) top center no-repeat;
+  body._bg--city, body._bg--nickname {
+    background: url(../../images/bg-cadastro-cidade.png) left bottom no-repeat, url(../../images/bg-2.png) top center no-repeat;
+    background-size: contain, cover; }
+    body._bg--city._bg--nickname, body._bg--nickname._bg--nickname {
+      background-image: url(../../images/bg-cadastro-cidade.png), url(../../images/bg-2.png); }
+  body._bg--time {
+    background: url(../../images/bg-horario-nascimento.png) center bottom no-repeat, url(../../images/bg-2.png) top center no-repeat;
     background-size: contain, cover; }
 
 *::-webkit-scrollbar {
@@ -73,6 +84,9 @@ body {
   background: #000;
   width: 1px;
   border-radius: 0.5rem; }
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.63); }
 
 .btn-primary {
   border: none;
@@ -148,5 +162,12 @@ body {
 .roulette-wrapper canvas {
   position: absolute;
   border-radius: 50%; }
+
+.form-check .form-check-input {
+  border-color: #d8bfa0;
+  background: none;
+  box-shadow: none; }
+  .form-check .form-check-input:checked {
+    background: #d8bfa0; }
 
 /*# sourceMappingURL=style.css.map */
