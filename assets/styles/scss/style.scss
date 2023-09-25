@@ -157,7 +157,7 @@ input::placeholder {
       overflow: hidden;
       box-sizing: border-box;
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         left: 50%;
         top: 50%;
@@ -209,9 +209,9 @@ input::placeholder {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.65rem;
   padding: 0;
-  li {
+  & > li {
     position: relative;
     padding-left: 2.85rem;
     font-weight: 400;
@@ -219,7 +219,7 @@ input::placeholder {
       position: absolute;
       left: 0;
       top: 0;
-      content: '';
+      content: "";
       display: flex;
       width: 2rem;
       height: 2rem;
@@ -230,5 +230,28 @@ input::placeholder {
       padding-bottom: 1rem;
       border-bottom: 1px solid $cream;
     }
+  }
+}
+// Starred
+.star-classification {
+  display: flex;
+  gap: 0.5rem;
+  li {
+    display: flex;
+    width: 1.25rem;
+    height: 1.5rem;
+    cursor: pointer;
+    background: url(../../images/star.svg) center no-repeat;
+    background-size: contain;
+    &._starred {
+      background-image: url(../../images/star-starred.svg);
+    }
+  }
+  &.position-absolute {
+    right: .5rem;
+    @media only screen and (min-width:764px) {
+      right: 1.5rem;
+    }
+    top: -1.4rem;
   }
 }
