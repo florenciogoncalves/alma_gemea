@@ -20,6 +20,9 @@
 ._border--white {
   border: 1px solid $accent-white-34 !important;
 }
+._border--cream {
+  border-color: $cream !important;
+}
 
 // Text
 ._color--white {
@@ -62,4 +65,7 @@
 }
 ._bg-cream {
   background-color: $cream;
+}
+._bg--sky-night-blue {
+  background-color: $sky-night-blue;
 }

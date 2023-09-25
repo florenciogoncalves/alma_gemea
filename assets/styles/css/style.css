@@ -32,6 +32,9 @@
 ._border--white {
   border: 1px solid rgba(255, 255, 255, 0.34) !important; }
 
+._border--cream {
+  border-color: #d8bfa0 !important; }
+
 ._color--white {
   color: #fff !important; }
 
@@ -69,6 +72,9 @@
 
 ._bg-cream {
   background-color: #d8bfa0; }
+
+._bg--sky-night-blue {
+  background-color: #0E062B; }
 
 html,
 body {
@@ -261,7 +267,7 @@ input::placeholder {
     .star-classification li._starred {
       background-image: url(../../images/star-starred.svg); }
   .star-classification.position-absolute {
-    right: .5rem;
+    right: 0.5rem;
     top: -1.4rem; }
     @media only screen and (min-width: 764px) {
       .star-classification.position-absolute {
@@ -282,5 +288,55 @@ input::placeholder {
       border-radius: 50%;
       object-fit: cover;
       background: #D9D9D9; }
+
+.responsive-title {
+  font-size: 1rem; }
+  @media only screen and (min-width: 763.93px) {
+    .responsive-title {
+      font-size: 1.2rem; } }
+
+.inline-print-btn {
+  position: absolute;
+  right: 0;
+  top: 0; }
+  .inline-print-btn, .inline-print-btn:hover, .inline-print-btn:active {
+    height: 1.75rem;
+    width: 1.75rem;
+    background: url(../../images/print-icon.svg) no-repeat center, #0E062B !important;
+    background-size: 65% !important; }
+
+.realistic-draw {
+  aspect-ratio: 1/1; }
+  .realistic-draw .__draw {
+    aspect-ratio: 1/1;
+    height: 100%;
+    object-fit: contain; }
+
+.set-sig-to-bg {
+  border-color: #d8bfa0 !important;
+  background: no-repeat center right;
+  background-size: contain;
+  background-image: url(../../images/sigs/Aries.svg);
+  background-color: #fff;
+  background-blend-mode: exclusion; }
+
+.music-list {
+  list-style: none; }
+  .music-list li {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    box-shadow: 1px 1px 4px 0px #00000040;
+    align-items: center;
+    gap: .5rem; }
+    .music-list li .music-icon {
+      width: 3.5rem;
+      height: 100%;
+      background: url(../../images/clave-song.svg) no-repeat center, #d8bfa0; }
+    .music-list li .play-button {
+      width: 2.25rem;
+      height: 2.25rem;
+      border: 1px solid #0E062B;
+      border-radius: 50%;
+      background: url(../../images/play-music.svg) no-repeat center; }
 
 /*# sourceMappingURL=style.css.map */
