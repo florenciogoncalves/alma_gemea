@@ -26,7 +26,7 @@
   color: $white !important;
 }
 ._color--cream {
-  color: $cream;
+  color: $cream !important;
 }
 ._color--black {
   color: $black;
@@ -36,6 +36,9 @@
 }
 ._color--white-79 {
   color: $accent-white-79;
+}
+._color--sky-night {
+  color: $sky-night-blue !important;
 }
 ._text--upper {
   text-transform: uppercase;
@@ -50,6 +53,12 @@
 // Background
 ._bg--white-34 {
   background-color: $accent-white-34 !important;
+}
+._bg--white {
+  background-color: $white;
+  * {
+    color: $black-night;
+  }
 }
 ._bg-cream {
   background-color: $cream;

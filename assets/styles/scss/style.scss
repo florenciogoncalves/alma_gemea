@@ -28,6 +28,7 @@ body {
       url(../../images/bg-2.png) top center no-repeat;
     background-size: contain, cover;
   }
+  background-attachment: fixed;
 }
 * {
   &::-webkit-scrollbar {
@@ -203,4 +204,31 @@ input::placeholder {
   background: url(../../images/email.svg) no-repeat center left 1rem;
   background-size: 1.275rem;
   padding-left: 3.25rem !important;
+}
+.star-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+  li {
+    position: relative;
+    padding-left: 2.85rem;
+    font-weight: 400;
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: '';
+      display: flex;
+      width: 2rem;
+      height: 2rem;
+      background: url(../../images/star-list-type.svg) no-repeat center;
+      background-size: contain;
+    }
+    &:not(:last-of-type) {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid $cream;
+    }
+  }
 }

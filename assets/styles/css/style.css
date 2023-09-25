@@ -36,7 +36,7 @@
   color: #fff !important; }
 
 ._color--cream {
-  color: #d8bfa0; }
+  color: #d8bfa0 !important; }
 
 ._color--black {
   color: #000; }
@@ -46,6 +46,9 @@
 
 ._color--white-79 {
   color: rgba(255, 255, 255, 0.79); }
+
+._color--sky-night {
+  color: #0E062B !important; }
 
 ._text--upper {
   text-transform: uppercase; }
@@ -59,6 +62,11 @@
 ._bg--white-34 {
   background-color: rgba(255, 255, 255, 0.34) !important; }
 
+._bg--white {
+  background-color: #fff; }
+  ._bg--white * {
+    color: #040305; }
+
 ._bg-cream {
   background-color: #d8bfa0; }
 
@@ -68,7 +76,8 @@ body {
 
 body {
   background: url(../../images/bg.png) center right no-repeat, #0E062B;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   body._bg--2 {
     background: url(../../images/bg-2.png) top center; }
   body._bg--city, body._bg--nickname {
@@ -214,5 +223,29 @@ input::placeholder {
   background: url(../../images/email.svg) no-repeat center left 1rem;
   background-size: 1.275rem;
   padding-left: 3.25rem !important; }
+
+.star-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0; }
+  .star-list li {
+    position: relative;
+    padding-left: 2.85rem;
+    font-weight: 400; }
+    .star-list li::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: '';
+      display: flex;
+      width: 2rem;
+      height: 2rem;
+      background: url(../../images/star-list-type.svg) no-repeat center;
+      background-size: contain; }
+    .star-list li:not(:last-of-type) {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #d8bfa0; }
 
 /*# sourceMappingURL=style.css.map */
