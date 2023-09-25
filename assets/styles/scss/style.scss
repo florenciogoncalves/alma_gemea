@@ -157,9 +157,30 @@ input::placeholder {
   }
 }
 .loading-bar {
-  height: .95rem;
+  height: 0.95rem;
   background: $gray;
   @media only screen and (min-width: 768px) {
     height: 1.25rem;
+  }
+}
+// informacao.html
+.gender {
+  .gender-option {
+    justify-content: space-between;
+    .gender-label {
+      height: 6.5rem;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      input {
+        display: none;
+      }
+      &[for="male"] {
+        background-image: url(../../images/male-gender.png);
+      }
+      &[for="female"] {
+        background-image: url(../../images/female-gender.png);
+      }
+    }
   }
 }

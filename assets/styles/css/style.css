@@ -174,10 +174,24 @@ input::placeholder {
     background: #d8bfa0; }
 
 .loading-bar {
-  height: .95rem;
+  height: 0.95rem;
   background: #D9D9D9; }
   @media only screen and (min-width: 768px) {
     .loading-bar {
       height: 1.25rem; } }
+
+.gender .gender-option {
+  justify-content: space-between; }
+  .gender .gender-option .gender-label {
+    height: 6.5rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .gender .gender-option .gender-label input {
+      display: none; }
+    .gender .gender-option .gender-label[for="male"] {
+      background-image: url(../../images/male-gender.png); }
+    .gender .gender-option .gender-label[for="female"] {
+      background-image: url(../../images/female-gender.png); }
 
 /*# sourceMappingURL=style.css.map */
