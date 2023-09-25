@@ -152,7 +152,21 @@ input::placeholder {
     background: none;
     box-shadow: none;
     &:checked {
-      background: $cream;
+      position: relative;
+      overflow: hidden;
+      box-sizing: border-box;
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% - 4px);
+        height: calc(100% - 4px);
+        border-radius: 2px;
+        margin: auto;
+        background: $cream;
+      }
     }
   }
 }
@@ -183,4 +197,10 @@ input::placeholder {
       }
     }
   }
+}
+// email.html
+.input-email {
+  background: url(../../images/email.svg) no-repeat center left 1rem;
+  background-size: 1.275rem;
+  padding-left: 3.25rem !important;
 }

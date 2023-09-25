@@ -44,6 +44,9 @@
 ._color--white-63 {
   color: rgba(255, 255, 255, 0.63); }
 
+._color--white-79 {
+  color: rgba(255, 255, 255, 0.79); }
+
 ._text--upper {
   text-transform: uppercase; }
 
@@ -171,7 +174,20 @@ input::placeholder {
   background: none;
   box-shadow: none; }
   .form-check .form-check-input:checked {
-    background: #d8bfa0; }
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box; }
+    .form-check .form-check-input:checked::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(100% - 4px);
+      height: calc(100% - 4px);
+      border-radius: 2px;
+      margin: auto;
+      background: #d8bfa0; }
 
 .loading-bar {
   height: 0.95rem;
@@ -193,5 +209,10 @@ input::placeholder {
       background-image: url(../../images/male-gender.png); }
     .gender .gender-option .gender-label[for="female"] {
       background-image: url(../../images/female-gender.png); }
+
+.input-email {
+  background: url(../../images/email.svg) no-repeat center left 1rem;
+  background-size: 1.275rem;
+  padding-left: 3.25rem !important; }
 
 /*# sourceMappingURL=style.css.map */
