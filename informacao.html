@@ -8,17 +8,14 @@
     <link rel="stylesheet" href="./assets/styles/css/style.css" />
   </head>
   <body
-    class="_color--white d-flex flex-column justify-content-center align-items-center"
-  >
+    class="_color--white d-flex flex-column justify-content-center align-items-center">
     <div
-      class="d-flex flex-column justify-content-center align-items-center h-full col-md-7"
-    >
+      class="d-flex flex-column justify-content-center align-items-center h-full col-md-7">
       <h1 class="title text-center">Horário de nascimento</h1>
       <p class="text text-center mt-1">Selecione o seu gênero</p>
       <!-- Middle line -->
       <div
-        class="line-with-star d-flex flex-row align-items-center col-12 col-md-12 my-3"
-      >
+        class="line-with-star d-flex flex-row align-items-center col-12 col-md-12 my-3">
         <div class="__line col"></div>
         <img src="./assets/images/three-stars.svg" class="col-1 mx-3 p-md-1" />
         <div class="__line col"></div>
@@ -26,14 +23,17 @@
       <!-- Middle line -->
       <form action="" class="born-form d-flex flex-column col-12">
         <!-- Gender radio -->
-        <div class="gender d-flex row-cols-2 gap-3 align-items-center mb-5 col-12 col-md-8 mx-auto">
-          <div class="gender-option mt-4 __checked d-flex flex-column align-items-center gap-3 gap-md-4">
+        <div
+          class="gender d-flex row-cols-2 gap-3 align-items-center mb-5 col-12 col-md-10 mx-auto">
+          <div
+            class="gender-option mt-4 __checked d-flex flex-column align-items-center gap-3 gap-md-4">
             <label class="gender-label col-12" for="male"
               ><input type="radio" name="gender" value="male" id="male" checked
             /></label>
             <span class="_text--upper title mt-3">Masculino</span>
           </div>
-          <div class="gender-option mt-4 d-flex flex-column align-items-center gap-3 gap-md-4">
+          <div
+            class="gender-option mt-4 d-flex flex-column align-items-center gap-3 gap-md-4">
             <label class="gender-label col-12" for="female"
               ><input type="radio" name="gender" value="female" id="female"
             /></label>
@@ -42,19 +42,11 @@
         </div>
         <button
           class="btn btn-primary _text--upper py-3 col-12 col-md-7 rounded-md mx-auto mt-2 mt-md-4"
-          type="submit"
-        >
+          type="submit">
           Prosseguir
         </button>
       </form>
     </div>
-    <script>
-      document.querySelectorAll('.gender-option [type="radio"]').forEach(el => {
-        el.addEventListener('change', () => {
-          document.querySelector('.gender .__checked').classList.remove('__checked')
-          el.parentElement.parentElement.classList.add('__checked')
-        })
-      })
-    </script>
+    <script src="./assets/scripts/script.js"></script>
   </body>
 </html>

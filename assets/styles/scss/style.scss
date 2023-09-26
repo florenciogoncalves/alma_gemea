@@ -177,6 +177,10 @@ input::placeholder {
   @media only screen and (min-width: 768px) {
     height: 1.25rem;
   }
+  .__bar {
+    transition: width 300ms;
+    width: 0%;
+  }
 }
 // informacao.html
 .gender {
