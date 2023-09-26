@@ -363,3 +363,36 @@ input::placeholder {
     }
   }
 }
+
+.reveal-sig {
+  display: flex;
+  background: url(../../images/borded-double-circle-2.png) no-repeat left center;
+  background-size: contain;
+  padding-right: 6.75rem;
+  .__sig {
+    width: 75%;
+    height: 75%;
+    margin: auto;
+    background: center no-repeat url(../../images/sigs/white/Aquarius.svg);
+    background-size: contain;
+    $sigs: (
+      "aries",
+      "taurus",
+      "gemini",
+      "cancer",
+      "leo",
+      "virgo",
+      "libra",
+      "scorpio",
+      "sagittarius",
+      "capricorn",
+      "aquarius",
+      "pisces"
+    );
+    @each $sig in $sigs {
+      &._sig--#{$sig} {
+        background-image: url(../../images/sigs/white/#{$sig}.svg);
+      }
+    }
+  }
+}

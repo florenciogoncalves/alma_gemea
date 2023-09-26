@@ -362,4 +362,40 @@ input::placeholder {
     background: url(../../images/print-icon.svg) no-repeat center;
     background-size: contain; }
 
+.reveal-sig {
+  display: flex;
+  background: url(../../images/borded-double-circle-2.png) no-repeat left center;
+  background-size: contain;
+  padding-right: 6.75rem; }
+  .reveal-sig .__sig {
+    width: 75%;
+    height: 75%;
+    margin: auto;
+    background: center no-repeat url(../../images/sigs/white/Aquarius.svg);
+    background-size: contain; }
+    .reveal-sig .__sig._sig--aries {
+      background-image: url(../../images/sigs/white/aries.svg); }
+    .reveal-sig .__sig._sig--taurus {
+      background-image: url(../../images/sigs/white/taurus.svg); }
+    .reveal-sig .__sig._sig--gemini {
+      background-image: url(../../images/sigs/white/gemini.svg); }
+    .reveal-sig .__sig._sig--cancer {
+      background-image: url(../../images/sigs/white/cancer.svg); }
+    .reveal-sig .__sig._sig--leo {
+      background-image: url(../../images/sigs/white/leo.svg); }
+    .reveal-sig .__sig._sig--virgo {
+      background-image: url(../../images/sigs/white/virgo.svg); }
+    .reveal-sig .__sig._sig--libra {
+      background-image: url(../../images/sigs/white/libra.svg); }
+    .reveal-sig .__sig._sig--scorpio {
+      background-image: url(../../images/sigs/white/scorpio.svg); }
+    .reveal-sig .__sig._sig--sagittarius {
+      background-image: url(../../images/sigs/white/sagittarius.svg); }
+    .reveal-sig .__sig._sig--capricorn {
+      background-image: url(../../images/sigs/white/capricorn.svg); }
+    .reveal-sig .__sig._sig--aquarius {
+      background-image: url(../../images/sigs/white/aquarius.svg); }
+    .reveal-sig .__sig._sig--pisces {
+      background-image: url(../../images/sigs/white/pisces.svg); }
+
 /*# sourceMappingURL=style.css.map */

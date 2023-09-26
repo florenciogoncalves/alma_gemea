@@ -1,4 +1,8 @@
-import {bornDay, setFormValidation} from "./modules/born-day.js";
+import { bornDay, setFormValidation } from "./modules/born-day.js";
 
-bornDay.setYearOptions()
-setFormValidation
+// To run born day validation
+if (document.querySelector("#born-data-form")) {
+  bornDay.setYearOptions();
+  setFormValidation;
+}
+
