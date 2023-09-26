@@ -214,16 +214,41 @@ input::placeholder {
 .gender .gender-option {
   justify-content: space-between; }
   .gender .gender-option .gender-label {
-    height: 6.5rem;
+    position: relative;
+    height: 7rem;
+    width: 7rem;
+    cursor: pointer;
     background-size: contain;
     background-position: center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    border: 3.69px solid rgba(216, 191, 160, 0.2);
+    border-radius: 50%; }
+    .gender .gender-option .gender-label::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(100% + 1.5rem);
+      height: calc(100% + 1.5rem);
+      content: '';
+      background: url(../../images/dashed-circle-opacity.png) no-repeat;
+      background-size: contain; }
+    @media only screen and (min-width: 763.7px) {
+      .gender .gender-option .gender-label {
+        height: 8.5rem;
+        width: 8.5rem; } }
     .gender .gender-option .gender-label input {
       display: none; }
     .gender .gender-option .gender-label[for="male"] {
       background-image: url(../../images/male-gender.png); }
     .gender .gender-option .gender-label[for="female"] {
       background-image: url(../../images/female-gender.png); }
+  .gender .gender-option.__checked .gender-label {
+    border-color: #d8bfa0; }
+    .gender .gender-option.__checked .gender-label::after {
+      width: calc(100% + 3rem);
+      height: calc(100% + 3rem);
+      background-image: url(../../images/double-dashed-circles.png); }
 
 .input-email {
   background: url(../../images/email.svg) no-repeat center left 1rem;

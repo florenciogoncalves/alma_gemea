@@ -26,18 +26,18 @@
       <!-- Middle line -->
       <form action="" class="born-form d-flex flex-column col-12">
         <!-- Gender radio -->
-        <div class="gender d-flex row-cols-2 gap-3 align-items-center mb-5 col-10 mx-auto">
-          <div class="gender-option d-flex flex-column align-items-center gap-3 gap-md-4">
+        <div class="gender d-flex row-cols-2 gap-3 align-items-center mb-5 col-12 col-md-8 mx-auto">
+          <div class="gender-option mt-4 __checked d-flex flex-column align-items-center gap-3 gap-md-4">
             <label class="gender-label col-12" for="male"
               ><input type="radio" name="gender" value="male" id="male" checked
             /></label>
-            <span class="_text--upper title">Masculino</span>
+            <span class="_text--upper title mt-3">Masculino</span>
           </div>
-          <div class="gender-option d-flex flex-column align-items-center gap-3 gap-md-4">
+          <div class="gender-option mt-4 d-flex flex-column align-items-center gap-3 gap-md-4">
             <label class="gender-label col-12" for="female"
               ><input type="radio" name="gender" value="female" id="female"
             /></label>
-            <span class="_text--upper title">Feminino</span>
+            <span class="_text--upper title mt-3">Feminino</span>
           </div>
         </div>
         <button
@@ -48,5 +48,13 @@
         </button>
       </form>
     </div>
+    <script>
+      document.querySelectorAll('.gender-option [type="radio"]').forEach(el => {
+        el.addEventListener('change', () => {
+          document.querySelector('.gender .__checked').classList.remove('__checked')
+          el.parentElement.parentElement.classList.add('__checked')
+        })
+      })
+    </script>
   </body>
 </html>

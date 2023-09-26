@@ -183,10 +183,30 @@ input::placeholder {
   .gender-option {
     justify-content: space-between;
     .gender-label {
-      height: 6.5rem;
+      position: relative;
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% + 1.5rem);
+        height: calc(100% + 1.5rem);
+        content: '';
+        background: url(../../images/dashed-circle-opacity.png) no-repeat;
+        background-size: contain;
+      }
+      @media only screen and (min-width: 763.7px) {
+        height: 8.5rem;
+      width: 8.5rem;
+      }
+      height: 7rem;
+      width: 7rem;
+      cursor: pointer;
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
+      border: 3.69px solid rgba($cream, .20);
+      border-radius: 50%;
       input {
         display: none;
       }
@@ -195,6 +215,16 @@ input::placeholder {
       }
       &[for="female"] {
         background-image: url(../../images/female-gender.png);
+      }
+    }
+    &.__checked {
+      .gender-label {
+        border-color: $cream;
+        &::after {
+          width: calc(100% + 3rem);
+        height: calc(100% + 3rem);
+          background-image: url(../../images/double-dashed-circles.png);
+        }
       }
     }
   }
