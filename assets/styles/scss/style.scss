@@ -396,3 +396,59 @@ input::placeholder {
     }
   }
 }
+.loc-city {
+  position: relative;
+  padding-left: 2rem;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url(../../images/loc.svg) no-repeat center;
+    background-size: contain;
+  }
+}
+.step-counter {
+  display: flex;
+  gap: 0.25rem;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  li {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: $cream;
+    opacity: 0.22;
+    &.__current {
+      width: 1.5rem;
+      opacity: 1;
+      border-radius: 0.25rem;
+    }
+  }
+}
+.select-time {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url(../../images/clock.svg) no-repeat center;
+    background-size: contain;
+  }
+  select {
+    &.border-left {
+      border-left: 1px solid $white !important; 
+      text-align: center;
+    }
+    option {
+      color: $sky-night-blue;
+    }
+  }
+}
