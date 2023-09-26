@@ -24,12 +24,13 @@
         <div class="__line col"></div>
       </div>
       <!-- Middle line -->
-      <form action="" class="born-form d-flex flex-column col-12">
+      <form action="" class="born-form d-flex flex-column col-12" id="born-data-form">
         <section
-          class="d-flex justify-content-center col-10 mx-auto my-4 gap-2"
+          class="d-flex justify-content-center col-10 mx-auto mt-4 gap-2"
         >
           <div class="select-born-container month col">
             <select
+            name="month" id="month"
               class="select-born d-flex rounded-md py-3 pe-md-3 align-items-center gap-2 col-12"
             >
               <label class="born-date-label" for="born-date"></label>
@@ -48,7 +49,7 @@
             </select>
           </div>
           <div class="select-born-container col-3">
-            <select class="select-born rounded-md py-3 px-2 px-md-3 col-12">
+            <select class="select-born rounded-md py-3 px-2 px-md-3 col-12" name="day" id="day">
               <option value="1">01</option>
               <option value="2">02</option>
               <option value="3">03</option>
@@ -83,11 +84,11 @@
             </select>
           </div>
           <div class="select-born-container col-3">
-            <select class="select-born rounded-md py-3 px-2 px-md-3 col-12">
-              <option value="">2004</option>
+            <select class="select-born rounded-md py-3 px-2 px-md-3 col-12" name="year" id="year">
             </select>
           </div>
         </section>
+        <p id="wrong-message" class="d-none col-10 mx-auto mb-4 mt-1 _color--cream">Por favor, insira uma data válida!</p>
         <button
           class="btn btn-primary _text--upper py-3 col-9 rounded-md mx-auto mt-5"
           type="submit"
@@ -96,5 +97,6 @@
         </button>
       </form>
     </div>
+    <script type="module" src="./assets/scripts/script.js"></script>
   </body>
 </html>
