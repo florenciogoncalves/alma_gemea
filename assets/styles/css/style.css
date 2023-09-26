@@ -76,6 +76,37 @@
 ._bg--sky-night-blue {
   background-color: #0E062B; }
 
+.your-sig {
+  background: center no-repeat;
+  background-size: contain; }
+  .your-sig._sig--aries {
+    background-image: url(../../images/sigs/aries.svg) !important; }
+  .your-sig._sig--taurus {
+    background-image: url(../../images/sigs/taurus.svg) !important; }
+  .your-sig._sig--gemini {
+    background-image: url(../../images/sigs/gemini.svg) !important; }
+  .your-sig._sig--cancer {
+    background-image: url(../../images/sigs/cancer.svg) !important; }
+  .your-sig._sig--leo {
+    background-image: url(../../images/sigs/leo.svg) !important; }
+  .your-sig._sig--virgo {
+    background-image: url(../../images/sigs/virgo.svg) !important; }
+  .your-sig._sig--libra {
+    background-image: url(../../images/sigs/libra.svg) !important; }
+  .your-sig._sig--scorpio {
+    background-image: url(../../images/sigs/scorpio.svg) !important; }
+  .your-sig._sig--sagittarius {
+    background-image: url(../../images/sigs/sagittarius.svg) !important; }
+  .your-sig._sig--capricorn {
+    background-image: url(../../images/sigs/capricorn.svg) !important; }
+  .your-sig._sig--aquarius {
+    background-image: url(../../images/sigs/aquarius.svg) !important; }
+  .your-sig._sig--pisces {
+    background-image: url(../../images/sigs/pisces.svg) !important; }
+
+._ratio--square {
+  aspect-ratio: 1/1; }
+
 html,
 body {
   height: 100%; }
@@ -210,6 +241,9 @@ input::placeholder {
   @media only screen and (min-width: 768px) {
     .loading-bar {
       height: 1.25rem; } }
+  .loading-bar .__bar {
+    transition: width 300ms;
+    width: 0%; }
 
 .gender .gender-option {
   justify-content: space-between; }
@@ -396,7 +430,7 @@ input::placeholder {
     width: 75%;
     height: 75%;
     margin: auto;
-    background: center no-repeat url(../../images/sigs/white/Aquarius.svg);
+    background: center no-repeat;
     background-size: contain; }
     .reveal-sig .__sig._sig--aries {
       background-image: url(../../images/sigs/white/aries.svg); }

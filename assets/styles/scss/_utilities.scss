@@ -69,3 +69,31 @@
 ._bg--sky-night-blue {
   background-color: $sky-night-blue;
 }
+
+.your-sig {
+  background: center no-repeat;
+  background-size: contain;
+  $sigs: (
+    "aries",
+    "taurus",
+    "gemini",
+    "cancer",
+    "leo",
+    "virgo",
+    "libra",
+    "scorpio",
+    "sagittarius",
+    "capricorn",
+    "aquarius",
+    "pisces"
+  );
+  @each $sig in $sigs {
+    &._sig--#{$sig} {
+      background-image: url(../../images/sigs/#{$sig}.svg) !important;
+    }
+  }
+}
+
+._ratio--square {
+  aspect-ratio: 1/1;
+}

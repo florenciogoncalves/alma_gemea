@@ -57,9 +57,7 @@ if (document.location.pathname === "/carregando-leitura.html") {
   const progressBar = document.querySelector(".loading-bar .__bar");
   const percentValue = document.querySelector(".__bar #percent-value");
   function loadingBar() {
-    console.log('passou')
     let percent = percentValue.value;
-
     progressBar.style.width = percent + "%";
   }
   percentValue.addEventListener("input", () => loadingBar());
