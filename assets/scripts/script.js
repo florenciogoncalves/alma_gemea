@@ -103,6 +103,7 @@ if (document.location.pathname === "/seu-horoscopo.html") {
 
 // Play music and save like a pdf
 if (document.location.pathname === "/sua-alma-gemea.html") {
+  // Audio
   const musics = document.querySelectorAll(".music-list li");
   musics.forEach((music) => {
     music.querySelector(".play-button").addEventListener("click", () => {
@@ -116,4 +117,11 @@ if (document.location.pathname === "/sua-alma-gemea.html") {
     });
     music.querySelector(".play-button").addEventListener("dblclick", () => {music.querySelector('.audio-element').currentTime = 0});
   });
+  // Save to pdf
+  document.querySelectorAll('.save-to-pdf').forEach(btn => {
+    btn.addEventListener('click', () => {
+      console.log('oi')
+      window.print(document.querySelector('body').innerHTML)
+    })
+  })
 }
