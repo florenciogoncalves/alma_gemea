@@ -339,9 +339,8 @@ input::placeholder {
   border-color: $cream !important;
   background: no-repeat center right;
   background-size: contain;
-  background-image: url(../../images/sigs/Aries.svg);
   background-color: #fff;
-  background-blend-mode: exclusion;
+  background-blend-mode: difference;
 }
 .music-list {
   list-style: none;

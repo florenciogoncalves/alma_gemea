@@ -92,6 +92,13 @@
       background-image: url(../../images/sigs/#{$sig}.svg) !important;
     }
   }
+  &._sig--white {
+    @each $sig in $sigs {
+      &._sig--#{$sig} {
+        background-image: url(../../images/sigs/white/#{$sig}.svg) !important;
+      }
+    }
+  }
 }
 
 ._ratio--square {

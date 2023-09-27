@@ -100,3 +100,20 @@ if (document.location.pathname === "/seu-horoscopo.html") {
     );
   });
 }
+
+// Play music and save like a pdf
+if (document.location.pathname === "/sua-alma-gemea.html") {
+  const musics = document.querySelectorAll(".music-list li");
+  musics.forEach((music) => {
+    music.querySelector(".play-button").addEventListener("click", () => {
+      const audio = music.querySelector(".audio-element");
+      musics.forEach((el) => {
+        if (el != music) {
+          el.querySelector(".audio-element").pause();
+        }
+      });
+      audio.paused ? audio.play() : audio.pause();
+    });
+    music.querySelector(".play-button").addEventListener("dblclick", () => {music.querySelector('.audio-element').currentTime = 0});
+  });
+}
