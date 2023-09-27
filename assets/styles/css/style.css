@@ -291,7 +291,7 @@ input::placeholder {
       transform: translate(-50%, -50%);
       width: calc(100% + 1.5rem);
       height: calc(100% + 1.5rem);
-      content: '';
+      content: "";
       background: url(../../images/dashed-circle-opacity.png) no-repeat;
       background-size: contain; }
     @media only screen and (min-width: 763.7px) {
@@ -400,10 +400,14 @@ input::placeholder {
 
 .set-sig-to-bg {
   border-color: #d8bfa0 !important;
-  background: no-repeat center right;
-  background-size: contain;
+  background: no-repeat right bottom;
+  background-size: 70%;
   background-color: #fff;
   background-blend-mode: difference; }
+  @media only screen and (min-width: 763.7px) {
+    .set-sig-to-bg {
+      background: no-repeat center right;
+      background-size: contain; } }
 
 .music-list {
   list-style: none; }

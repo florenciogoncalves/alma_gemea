@@ -195,13 +195,13 @@ input::placeholder {
         transform: translate(-50%, -50%);
         width: calc(100% + 1.5rem);
         height: calc(100% + 1.5rem);
-        content: '';
+        content: "";
         background: url(../../images/dashed-circle-opacity.png) no-repeat;
         background-size: contain;
       }
       @media only screen and (min-width: 763.7px) {
         height: 8.5rem;
-      width: 8.5rem;
+        width: 8.5rem;
       }
       height: 7rem;
       width: 7rem;
@@ -209,7 +209,7 @@ input::placeholder {
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
-      border: 3.69px solid rgba($cream, .20);
+      border: 3.69px solid rgba($cream, 0.2);
       border-radius: 50%;
       input {
         display: none;
@@ -226,7 +226,7 @@ input::placeholder {
         border-color: $cream;
         &::after {
           width: calc(100% + 3rem);
-        height: calc(100% + 3rem);
+          height: calc(100% + 3rem);
           background-image: url(../../images/double-dashed-circles.png);
         }
       }
@@ -337,8 +337,12 @@ input::placeholder {
 }
 .set-sig-to-bg {
   border-color: $cream !important;
-  background: no-repeat center right;
-  background-size: contain;
+  background: no-repeat right bottom;
+  background-size: 70%;
+  @media only screen and (min-width: 763.7px) {
+    background: no-repeat center right;
+    background-size: contain;
+  }
   background-color: #fff;
   background-blend-mode: difference;
 }
@@ -477,7 +481,7 @@ input::placeholder {
   }
   select {
     &.border-left {
-      border-left: 1px solid $white !important; 
+      border-left: 1px solid $white !important;
       text-align: center;
     }
     option {
