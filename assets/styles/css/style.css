@@ -131,6 +131,9 @@
 ._ratio--square {
   aspect-ratio: 1/1; }
 
+.btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #d8bfa0 !important; }
+
 html,
 body {
   height: 100%; }

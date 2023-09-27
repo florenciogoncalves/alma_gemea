@@ -104,3 +104,12 @@
 ._ratio--square {
   aspect-ratio: 1/1;
 }
+
+.btn-primary {
+  &,
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: $cream !important;
+  }
+}
