@@ -62,6 +62,41 @@ if (document.location.pathname === "/carregando-leitura.html") {
   }
   percentValue.addEventListener("input", () => loadingBar());
   loadingBar();
-  setInterval(loadingBar, 300)
+  setInterval(loadingBar, 300);
+}
 
+// Star classification
+if (document.location.pathname === "/seu-horoscopo.html") {
+  document.querySelectorAll(".star-classification").forEach((el) => {
+    const stars = el.querySelectorAll("li");
+    const starsArray = Array.from(stars);
+    stars.forEach((star) =>
+      star.addEventListener("click", (evt) => {
+        // Remove excess
+        if (
+          star.parentElement.querySelectorAll("._starred").length - 1 >
+          starsArray.indexOf(star)
+        ) {
+          star.parentElement
+            .querySelectorAll("._starred")
+            .forEach((star2) => star2.classList.remove("_starred"));
+          for (let count = 0; count < starsArray.indexOf(star) + 1; count++) {
+            stars[count].classList.add("_starred");
+          }
+        }
+        // Remove starred
+        else if (star.classList.contains("_starred")) {
+          for (let count = 0; count < starsArray.indexOf(star) + 1; count++) {
+            stars[count].classList.remove("_starred");
+          }
+        }
+        // Add starred
+        else if (!star.classList.contains("_starred")) {
+          for (let count = 0; count < starsArray.indexOf(star) + 1; count++) {
+            stars[count].classList.add("_starred");
+          }
+        }
+      })
+    );
+  });
 }
